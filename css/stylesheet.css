@@ -1,0 +1,291 @@
+/* Colors for this theme
+grey/black: #474747, #333
+accents:
+  red: #fc5c65
+  orange: #fd9644
+  yellow: #fed330
+  green: #26de81
+  blue: #45aaf2
+  darkblue: #4b7bec
+
+links:
+  default: #2bcbba
+  hover: #55E6C1
+*/
+
+html{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  top: 0;
+  background-color: #333;
+  text-align: center;
+  color: #EAFAFA;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  padding: auto;
+}
+
+:root{
+  font-size: 15px;
+}
+
+a{
+  color: #2bcbba;
+}
+
+a:hover,
+a:focus{
+  color: #55E6C1;
+  text-decoration: underline;
+}
+
+/* Top Nav */
+
+.top{
+  max-height: 70px;
+  max-width: 100vw;
+  padding-top: 10px;
+  margin: auto;
+  background-color: #434343;
+  box-shadow: 0px 10px 10px #2B2B2B;
+  position: fixed;
+  z-index: 5;
+  opacity: 0.97;
+  height: 65px;
+  width: 100vw;
+}
+
+.top-content-style{
+  padding: 2vw;
+  padding-top: 80px;
+  padding-bottom: 0px;
+
+}
+
+.content-style{
+  text-align: justify;
+  margin: auto;
+  margin: 15px;
+}
+
+/* Top Buttons */
+.btn-style{
+  background-color: #333;
+  box-shadow: 0px 0px 1px 1px #2B2B2B;
+  margin-top: 5px;
+  border-radius: 0px;
+  visibility: hidden;
+}
+
+.btn-style:hover{
+  box-shadow: 0px 0px 3px 1px #55E6C1;
+}
+
+.container{
+  position: relative;
+}
+
+/* Content formatting*/
+
+.row{
+  padding:  0vw 6vw;
+  margin: 0px;
+}
+
+/* This is really important it stops the screen shaking when hovering over the contact icons*/
+.bottom-row{
+  max-width: 100%;
+}
+
+.subtitle{
+  text-align: center;
+  text-shadow: 0px 0px 2px gray;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.portfolio-sub{
+    color: #26de81;
+    border: 1px dotted #26de81;
+    margin:  0vw 7.5vw;
+}
+
+.about-sub{
+    color: #fd9644;
+    border: 1px dotted #fd9644
+}
+
+.contact-sub{
+    color: #45aaf2;
+    border: 1px dotted #45aaf2
+}
+
+/* Portfolio section */
+
+.card{
+  color: #333;
+  border-radius: 0px;
+}
+
+.card-btn{
+  background-color:#26de81;
+  color: white;
+  border-radius: 0px;
+}
+
+/* Contact section */
+
+.icons{
+  text-align: center;
+}
+
+.icons-bg {
+  padding: 5px;
+  margin: 10px 0px;
+  height: 70px; /*Double check this, as original version on codepen looked better with 70px*/
+  position: relative;
+}
+
+#github{
+  background-color: #282828;
+}
+
+#linkedin{
+  background-color: #0077B5;
+}
+
+#twitter{
+  background-color: #1da1f2;
+}
+
+#email{
+  background-color: #60a3bc;
+}
+
+.fa-4x{
+  position: absolute;
+  left: 44%;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+}
+
+.icons-bg:hover .fa-4x{
+  position: absolute;
+  left: 4%;
+}
+
+.icons-bg:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 1px #55E6C1;
+}
+
+.con-link{
+  font-size: 25px;
+  margin-top:8px;
+  position: absolute;
+  text-decoration:none;
+  color:white;
+  left: 70%;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  opacity:0;
+  transition:opacity 1000ms;
+}
+
+.icons-bg:hover .con-link{
+  position: absolute;
+  left: 42%;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  opacity: 1;
+}
+
+.con-link:hover{
+  text-decoration: none;
+  color:white;
+}
+
+/* Footer */
+
+.footer-style{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  opacity: 0.9;
+}
+
+.footer-text{
+  font-size: 0.9rem;
+  margin: 5px 0px;
+  opacity: 0.5;
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (min-width:769px) and (max-width:992px) {
+  .row{
+    padding: 0vw 1vw;
+    margin: 0px;
+  }
+
+  .portfolio-sub{
+    margin: 0vw 2vw;
+  }
+}
+
+/* Phone*/
+@media screen and (min-width: 421px) and (max-width:768px) {
+  .btn-style{
+    font-size: 13px;
+  }
+  body{
+    font-size: 0.9rem;
+  }
+}
+
+/* Single column resizing*/
+
+@media screen and (max-width:780px) {
+  .btn-style{
+    visibility: visible;
+  }
+
+  .text-title{
+    font-size: 2rem;
+  }
+
+   .top{
+    max-height: 105px;
+    height: 105px;
+  }
+
+  .row{
+    padding: 0vw;
+    margin: 0px;
+  }
+
+  .portfolio-sub{
+    margin: 0vw 2vw;
+    margin-top: 50px;
+  }
+  .icons-bg {
+    height: 65px;
+}
+
+@media screen and (max-width:420px) {
+  .btn-style{
+    font-size: 13px;
+  }
+}
